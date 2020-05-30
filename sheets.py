@@ -18,6 +18,3 @@ sheet.update_cell(3, 11, "Test")
 
 dataTest = sheet.acell('F5').value
 print(dataTest)
-# data = sheet.get_all_records()
-#
-# print(data)
