@@ -10,12 +10,14 @@ client = gspread.authorize(creds)
 
 sheet = client.open('Match tracking').sheet1
 
-data = sheet.get_all_records()
+# data = sheet.get_all_records()
+#
+# print(data)
 
-print(data)
+sheet.update_cell(3, 11, "Test")
 
-sheet.update_cell(3, 3, "Test")
-
-data = sheet.get_all_records()
-
-print(data)
+dataTest = sheet.acell('F5').value
+print(dataTest)
+# data = sheet.get_all_records()
+#
+# print(data)
